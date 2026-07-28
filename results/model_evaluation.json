@@ -1,0 +1,933 @@
+{
+  "status": "exploratory_two_fold_event_group_cv",
+  "limitations": [
+    "Only one 25.7-second session is reviewed.",
+    "Each target class has only two physical events.",
+    "This estimates within-session separability, not cross-driver/device generalization.",
+    "Thresholds were not tuned on an independent validation set."
+  ],
+  "grouping": "All windows ending inside one annotated physical interval stay in one fold.",
+  "folds": [
+    {
+      "fold": 1,
+      "train_event_groups": 8,
+      "test_event_groups": 9,
+      "train_event_ids": [
+        "sample_002",
+        "sample_009",
+        "sample_011",
+        "sample_012",
+        "sample_014",
+        "sample_015",
+        "sample_016",
+        "sample_017"
+      ],
+      "test_event_ids": [
+        "sample_001",
+        "sample_003",
+        "sample_004",
+        "sample_005",
+        "sample_006",
+        "sample_007",
+        "sample_008",
+        "sample_010",
+        "sample_013"
+      ],
+      "event_group_overlap": 0,
+      "models": {
+        "logistic_regression": {
+          "labels": [
+            "Clutch Release",
+            "Harsh Acceleration",
+            "Harsh Braking",
+            "Normal Driving",
+            "Pothole/Bump"
+          ],
+          "classification_report": {
+            "Clutch Release": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 4.0
+            },
+            "Harsh Acceleration": {
+              "precision": 0.4117647058823529,
+              "recall": 1.0,
+              "f1-score": 0.5833333333333334,
+              "support": 7.0
+            },
+            "Harsh Braking": {
+              "precision": 1.0,
+              "recall": 0.7777777777777778,
+              "f1-score": 0.875,
+              "support": 9.0
+            },
+            "Normal Driving": {
+              "precision": 0.9340659340659341,
+              "recall": 0.8252427184466019,
+              "f1-score": 0.8762886597938144,
+              "support": 103.0
+            },
+            "Pothole/Bump": {
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1-score": 1.0,
+              "support": 2.0
+            },
+            "accuracy": 0.808,
+            "macro avg": {
+              "precision": 0.6691661279896574,
+              "recall": 0.7206040992448759,
+              "f1-score": 0.6669243986254296,
+              "support": 125.0
+            },
+            "weighted avg": {
+              "precision": 0.8807291531997414,
+              "recall": 0.808,
+              "f1-score": 0.8337285223367698,
+              "support": 125.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              7,
+              2,
+              0
+            ],
+            [
+              8,
+              10,
+              0,
+              85,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              2
+            ]
+          ],
+          "average_precision_ovr": {
+            "Clutch Release": 0.14340538847117792,
+            "Harsh Acceleration": 0.982142857142857,
+            "Harsh Braking": 1.0000000000000002,
+            "Normal Driving": 0.977348438117241,
+            "Pothole/Bump": 1.0
+          }
+        },
+        "random_forest": {
+          "labels": [
+            "Clutch Release",
+            "Harsh Acceleration",
+            "Harsh Braking",
+            "Normal Driving",
+            "Pothole/Bump"
+          ],
+          "classification_report": {
+            "Clutch Release": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 4.0
+            },
+            "Harsh Acceleration": {
+              "precision": 0.7,
+              "recall": 1.0,
+              "f1-score": 0.8235294117647058,
+              "support": 7.0
+            },
+            "Harsh Braking": {
+              "precision": 1.0,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.8,
+              "support": 9.0
+            },
+            "Normal Driving": {
+              "precision": 0.9252336448598131,
+              "recall": 0.9611650485436893,
+              "f1-score": 0.9428571428571428,
+              "support": 103.0
+            },
+            "Pothole/Bump": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1-score": 0.6666666666666666,
+              "support": 2.0
+            },
+            "accuracy": 0.904,
+            "macro avg": {
+              "precision": 0.7250467289719627,
+              "recall": 0.6255663430420711,
+              "f1-score": 0.646610644257703,
+              "support": 125.0
+            },
+            "weighted avg": {
+              "precision": 0.8895925233644859,
+              "recall": 0.904,
+              "f1-score": 0.8912985994397759,
+              "support": 125.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              3,
+              0
+            ],
+            [
+              1,
+              3,
+              0,
+              99,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "average_precision_ovr": {
+            "Clutch Release": 0.09374557913351017,
+            "Harsh Acceleration": 0.8260204081632654,
+            "Harsh Braking": 1.0,
+            "Normal Driving": 0.986596397410356,
+            "Pothole/Bump": 1.0
+          }
+        },
+        "xgboost": {
+          "labels": [
+            "Clutch Release",
+            "Harsh Acceleration",
+            "Harsh Braking",
+            "Normal Driving",
+            "Pothole/Bump"
+          ],
+          "classification_report": {
+            "Clutch Release": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 4.0
+            },
+            "Harsh Acceleration": {
+              "precision": 0.7777777777777778,
+              "recall": 1.0,
+              "f1-score": 0.875,
+              "support": 7.0
+            },
+            "Harsh Braking": {
+              "precision": 0.9,
+              "recall": 1.0,
+              "f1-score": 0.9473684210526315,
+              "support": 9.0
+            },
+            "Normal Driving": {
+              "precision": 0.9509803921568627,
+              "recall": 0.941747572815534,
+              "f1-score": 0.9463414634146341,
+              "support": 103.0
+            },
+            "Pothole/Bump": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1-score": 0.6666666666666666,
+              "support": 2.0
+            },
+            "accuracy": 0.912,
+            "macro avg": {
+              "precision": 0.7257516339869281,
+              "recall": 0.6883495145631068,
+              "f1-score": 0.6870753102267864,
+              "support": 125.0
+            },
+            "weighted avg": {
+              "precision": 0.9079633986928104,
+              "recall": 0.912,
+              "f1-score": 0.9076625588361146,
+              "support": 125.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              0,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              7,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              9,
+              0,
+              0
+            ],
+            [
+              3,
+              2,
+              1,
+              97,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              1
+            ]
+          ],
+          "average_precision_ovr": {
+            "Clutch Release": 0.13670343137254903,
+            "Harsh Acceleration": 0.9617346938775508,
+            "Harsh Braking": 1.0,
+            "Normal Driving": 0.9958521909313952,
+            "Pothole/Bump": 0.8333333333333333
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_event_groups": 9,
+      "test_event_groups": 8,
+      "train_event_ids": [
+        "sample_001",
+        "sample_003",
+        "sample_004",
+        "sample_005",
+        "sample_006",
+        "sample_007",
+        "sample_008",
+        "sample_010",
+        "sample_013"
+      ],
+      "test_event_ids": [
+        "sample_002",
+        "sample_009",
+        "sample_011",
+        "sample_012",
+        "sample_014",
+        "sample_015",
+        "sample_016",
+        "sample_017"
+      ],
+      "event_group_overlap": 0,
+      "models": {
+        "logistic_regression": {
+          "labels": [
+            "Clutch Release",
+            "Harsh Acceleration",
+            "Harsh Braking",
+            "Normal Driving",
+            "Pothole/Bump"
+          ],
+          "classification_report": {
+            "Clutch Release": {
+              "precision": 0.5555555555555556,
+              "recall": 0.7142857142857143,
+              "f1-score": 0.625,
+              "support": 7.0
+            },
+            "Harsh Acceleration": {
+              "precision": 1.0,
+              "recall": 0.16666666666666666,
+              "f1-score": 0.2857142857142857,
+              "support": 6.0
+            },
+            "Harsh Braking": {
+              "precision": 0.7777777777777778,
+              "recall": 1.0,
+              "f1-score": 0.875,
+              "support": 7.0
+            },
+            "Normal Driving": {
+              "precision": 0.9259259259259259,
+              "recall": 0.9090909090909091,
+              "f1-score": 0.9174311926605505,
+              "support": 110.0
+            },
+            "Pothole/Bump": {
+              "precision": 0.3333333333333333,
+              "recall": 0.6666666666666666,
+              "f1-score": 0.4444444444444444,
+              "support": 3.0
+            },
+            "accuracy": 0.8646616541353384,
+            "macro avg": {
+              "precision": 0.7185185185185186,
+              "recall": 0.6913419913419914,
+              "f1-score": 0.6295179845638561,
+              "support": 133.0
+            },
+            "weighted avg": {
+              "precision": 0.8886104149262043,
+              "recall": 0.8646616541353384,
+              "f1-score": 0.8606394754908241,
+              "support": 133.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              5,
+              0,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              1,
+              0,
+              5,
+              0
+            ],
+            [
+              0,
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              2,
+              100,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              1,
+              2
+            ]
+          ],
+          "average_precision_ovr": {
+            "Clutch Release": 0.6667594310451453,
+            "Harsh Acceleration": 1.0,
+            "Harsh Braking": 0.9999999999999998,
+            "Normal Driving": 0.9896852620026289,
+            "Pothole/Bump": 0.30277777777777776
+          }
+        },
+        "random_forest": {
+          "labels": [
+            "Clutch Release",
+            "Harsh Acceleration",
+            "Harsh Braking",
+            "Normal Driving",
+            "Pothole/Bump"
+          ],
+          "classification_report": {
+            "Clutch Release": {
+              "precision": 0.6,
+              "recall": 0.42857142857142855,
+              "f1-score": 0.5,
+              "support": 7.0
+            },
+            "Harsh Acceleration": {
+              "precision": 1.0,
+              "recall": 0.5,
+              "f1-score": 0.6666666666666666,
+              "support": 6.0
+            },
+            "Harsh Braking": {
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1-score": 0.9333333333333333,
+              "support": 7.0
+            },
+            "Normal Driving": {
+              "precision": 0.9122807017543859,
+              "recall": 0.9454545454545454,
+              "f1-score": 0.9285714285714286,
+              "support": 110.0
+            },
+            "Pothole/Bump": {
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1-score": 0.0,
+              "support": 3.0
+            },
+            "accuracy": 0.8796992481203008,
+            "macro avg": {
+              "precision": 0.6774561403508772,
+              "recall": 0.5748051948051949,
+              "f1-score": 0.6057142857142856,
+              "support": 133.0
+            },
+            "weighted avg": {
+              "precision": 0.8772622345337027,
+              "recall": 0.8796992481203008,
+              "f1-score": 0.8735051915503044,
+              "support": 133.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              3,
+              0,
+              0,
+              4,
+              0
+            ],
+            [
+              0,
+              3,
+              0,
+              3,
+              0
+            ],
+            [
+              0,
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              104,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              3,
+              0
+            ]
+          ],
+          "average_precision_ovr": {
+            "Clutch Release": 0.5568859711716854,
+            "Harsh Acceleration": 1.0,
+            "Harsh Braking": 0.9999999999999998,
+            "Normal Driving": 0.9901407183720988,
+            "Pothole/Bump": 0.10766806722689076
+          }
+        },
+        "xgboost": {
+          "labels": [
+            "Clutch Release",
+            "Harsh Acceleration",
+            "Harsh Braking",
+            "Normal Driving",
+            "Pothole/Bump"
+          ],
+          "classification_report": {
+            "Clutch Release": {
+              "precision": 0.6666666666666666,
+              "recall": 0.5714285714285714,
+              "f1-score": 0.6153846153846154,
+              "support": 7.0
+            },
+            "Harsh Acceleration": {
+              "precision": 1.0,
+              "recall": 0.8333333333333334,
+              "f1-score": 0.9090909090909091,
+              "support": 6.0
+            },
+            "Harsh Braking": {
+              "precision": 0.875,
+              "recall": 1.0,
+              "f1-score": 0.9333333333333333,
+              "support": 7.0
+            },
+            "Normal Driving": {
+              "precision": 0.9719626168224299,
+              "recall": 0.9454545454545454,
+              "f1-score": 0.9585253456221198,
+              "support": 110.0
+            },
+            "Pothole/Bump": {
+              "precision": 0.42857142857142855,
+              "recall": 1.0,
+              "f1-score": 0.6,
+              "support": 3.0
+            },
+            "accuracy": 0.924812030075188,
+            "macro avg": {
+              "precision": 0.788440142412105,
+              "recall": 0.8700432900432901,
+              "f1-score": 0.8032668406861955,
+              "support": 133.0
+            },
+            "weighted avg": {
+              "precision": 0.93979901355525,
+              "recall": 0.924812030075188,
+              "f1-score": 0.9288222489774758,
+              "support": 133.0
+            }
+          },
+          "confusion_matrix": [
+            [
+              4,
+              0,
+              0,
+              2,
+              1
+            ],
+            [
+              0,
+              5,
+              0,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              7,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              1,
+              104,
+              3
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              3
+            ]
+          ],
+          "average_precision_ovr": {
+            "Clutch Release": 0.3483560090702948,
+            "Harsh Acceleration": 0.8717948717948718,
+            "Harsh Braking": 0.9999999999999998,
+            "Normal Driving": 0.9939488556788264,
+            "Pothole/Bump": 0.38333333333333336
+          }
+        }
+      }
+    }
+  ],
+  "aggregate": {
+    "logistic_regression": {
+      "labels": [
+        "Clutch Release",
+        "Harsh Acceleration",
+        "Harsh Braking",
+        "Normal Driving",
+        "Pothole/Bump"
+      ],
+      "classification_report": {
+        "Clutch Release": {
+          "precision": 0.29411764705882354,
+          "recall": 0.45454545454545453,
+          "f1-score": 0.35714285714285715,
+          "support": 11.0
+        },
+        "Harsh Acceleration": {
+          "precision": 0.4444444444444444,
+          "recall": 0.6153846153846154,
+          "f1-score": 0.5161290322580645,
+          "support": 13.0
+        },
+        "Harsh Braking": {
+          "precision": 0.875,
+          "recall": 0.875,
+          "f1-score": 0.875,
+          "support": 16.0
+        },
+        "Normal Driving": {
+          "precision": 0.9296482412060302,
+          "recall": 0.8685446009389671,
+          "f1-score": 0.8980582524271845,
+          "support": 213.0
+        },
+        "Pothole/Bump": {
+          "precision": 0.5,
+          "recall": 0.8,
+          "f1-score": 0.6153846153846154,
+          "support": 5.0
+        },
+        "accuracy": 0.8372093023255814,
+        "macro avg": {
+          "precision": 0.6086420665418596,
+          "recall": 0.7226949341738074,
+          "f1-score": 0.6523429514425444,
+          "support": 258.0
+        },
+        "weighted avg": {
+          "precision": 0.8663881677221289,
+          "recall": 0.8372093023255814,
+          "f1-score": 0.8488433321389133,
+          "support": 258.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          8,
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          14,
+          2,
+          0
+        ],
+        [
+          12,
+          10,
+          2,
+          185,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          4
+        ]
+      ]
+    },
+    "random_forest": {
+      "labels": [
+        "Clutch Release",
+        "Harsh Acceleration",
+        "Harsh Braking",
+        "Normal Driving",
+        "Pothole/Bump"
+      ],
+      "classification_report": {
+        "Clutch Release": {
+          "precision": 0.5,
+          "recall": 0.2727272727272727,
+          "f1-score": 0.35294117647058826,
+          "support": 11.0
+        },
+        "Harsh Acceleration": {
+          "precision": 0.7692307692307693,
+          "recall": 0.7692307692307693,
+          "f1-score": 0.7692307692307693,
+          "support": 13.0
+        },
+        "Harsh Braking": {
+          "precision": 0.9285714285714286,
+          "recall": 0.8125,
+          "f1-score": 0.8666666666666667,
+          "support": 16.0
+        },
+        "Normal Driving": {
+          "precision": 0.918552036199095,
+          "recall": 0.9530516431924883,
+          "f1-score": 0.9354838709677419,
+          "support": 213.0
+        },
+        "Pothole/Bump": {
+          "precision": 0.25,
+          "recall": 0.2,
+          "f1-score": 0.2222222222222222,
+          "support": 5.0
+        },
+        "accuracy": 0.8914728682170543,
+        "macro avg": {
+          "precision": 0.6732708468002586,
+          "recall": 0.6015019370301061,
+          "f1-score": 0.6293089411115977,
+          "support": 258.0
+        },
+        "weighted avg": {
+          "precision": 0.880847777393605,
+          "recall": 0.8914728682170543,
+          "f1-score": 0.8841790512987724,
+          "support": 258.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          3,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          10,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          13,
+          3,
+          0
+        ],
+        [
+          3,
+          3,
+          1,
+          203,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          4,
+          1
+        ]
+      ]
+    },
+    "xgboost": {
+      "labels": [
+        "Clutch Release",
+        "Harsh Acceleration",
+        "Harsh Braking",
+        "Normal Driving",
+        "Pothole/Bump"
+      ],
+      "classification_report": {
+        "Clutch Release": {
+          "precision": 0.4444444444444444,
+          "recall": 0.36363636363636365,
+          "f1-score": 0.4,
+          "support": 11.0
+        },
+        "Harsh Acceleration": {
+          "precision": 0.8571428571428571,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.8888888888888888,
+          "support": 13.0
+        },
+        "Harsh Braking": {
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1-score": 0.9411764705882353,
+          "support": 16.0
+        },
+        "Normal Driving": {
+          "precision": 0.9617224880382775,
+          "recall": 0.9436619718309859,
+          "f1-score": 0.95260663507109,
+          "support": 213.0
+        },
+        "Pothole/Bump": {
+          "precision": 0.5,
+          "recall": 0.8,
+          "f1-score": 0.6153846153846154,
+          "support": 5.0
+        },
+        "accuracy": 0.9186046511627907,
+        "macro avg": {
+          "precision": 0.7304397357028936,
+          "recall": 0.8060750517088545,
+          "f1-score": 0.759611321986566,
+          "support": 258.0
+        },
+        "weighted avg": {
+          "precision": 0.9209335589384549,
+          "recall": 0.9186046511627907,
+          "f1-score": 0.9185911450853975,
+          "support": 258.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          4,
+          0,
+          0,
+          6,
+          1
+        ],
+        [
+          0,
+          12,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          16,
+          0,
+          0
+        ],
+        [
+          5,
+          2,
+          2,
+          201,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          4
+        ]
+      ]
+    }
+  }
+}

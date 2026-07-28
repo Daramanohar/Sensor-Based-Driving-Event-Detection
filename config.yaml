@@ -1,0 +1,81 @@
+project:
+  random_seed: 42
+  event_labels:
+    - Harsh Braking
+    - Harsh Acceleration
+    - Pothole/Bump
+    - Clutch Release
+  background_labels:
+    - Normal Driving
+    - Stationary
+
+data:
+  sample_csv: data/sample_sensor_data.csv
+  sample_rate_hz: 10.0
+  full_csv: data/driving_session_30min_50Hz.csv
+  full_rate_hz: 50.0
+  max_gps_age_s: 2.0
+  physical_limits:
+    acceleration_g: 6.0
+    gyro_dps: 500.0
+    speed_mps: 80.0
+    jerk_gps: 60.0
+
+preprocessing:
+  lowpass_order: 2
+  lowpass_cutoff_hz: 8.0
+  baseline_seconds: 2.0
+  gravity_time_constant_s: 2.0
+
+features:
+  windows_s: [0.25, 0.5, 1.0, 2.0]
+  hop_s: 0.1
+  spectral_min_window_s: 0.5
+
+rules:
+  harsh_accel_z_g: 0.20
+  harsh_brake_z_g: 0.20
+  harsh_min_duration_s: 0.15
+  pothole_vertical_delta_g: 0.30
+  pothole_gyro_dps: 7.0
+  clutch_gyro_rms_dps: 4.0
+  clutch_max_abs_longitudinal_g: 0.20
+  clutch_max_speed_mps: 3.0
+  clutch_window_s: 0.5
+
+postprocessing:
+  default:
+    onset_threshold: 0.55
+    offset_threshold: 0.35
+    min_duration_s: 0.12
+    merge_gap_s: 0.40
+  Harsh Braking:
+    min_duration_s: 0.15
+    merge_gap_s: 0.60
+  Harsh Acceleration:
+    min_duration_s: 0.15
+    merge_gap_s: 0.60
+  Pothole/Bump:
+    min_duration_s: 0.0
+    merge_gap_s: 0.45
+  Clutch Release:
+    min_duration_s: 0.08
+    max_duration_s: 1.2
+    merge_gap_s: 0.60
+
+model:
+  primary: xgboost
+  class_weight: balanced
+  validation_fraction: 0.20
+  test_fraction: 0.20
+  xgboost:
+    n_estimators: 500
+    learning_rate: 0.04
+    max_depth: 4
+    min_child_weight: 3.0
+    subsample: 0.85
+    colsample_bytree: 0.85
+    reg_alpha: 0.05
+    reg_lambda: 2.0
+    gamma: 0.0
+    tree_method: hist

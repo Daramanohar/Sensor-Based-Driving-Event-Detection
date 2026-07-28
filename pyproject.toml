@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driving-event-detection"
+version = "0.2.0"
+description = "Streaming rules and XGBoost for phone-sensor driving-event detection"
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+  "joblib>=1.4,<2",
+  "ipykernel>=6.29,<7",
+  "matplotlib>=3.8,<4",
+  "nbclient>=0.10,<1",
+  "nbformat>=5.10,<6",
+  "numpy==2.0.2",
+  "pandas==2.2.2",
+  "PyYAML>=6,<7",
+  "scikit-learn==1.7.1",
+  "scipy==1.15.3",
+  "seaborn>=0.13,<1",
+  "xgboost==3.0.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+  "pytest-cov>=5,<7",
+  "ruff>=0.9,<1",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

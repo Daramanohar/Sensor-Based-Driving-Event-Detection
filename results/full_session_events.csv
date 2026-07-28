@@ -1,0 +1,90 @@
+event_id,session_id,start_time_s,end_time_s,label,confidence,peak_time_s,duration_s,severity,source
+full_50hz_pred_0001,full_50hz,6.08,6.16,Pothole/Bump,0.577417,6.08,0.08,weak,streaming_rule_v2
+full_50hz_pred_0002,full_50hz,81.46,81.7,Pothole/Bump,0.631963,81.64,0.24,weak,streaming_rule_v2
+full_50hz_pred_0003,full_50hz,88.4,88.9,Pothole/Bump,0.798634,88.74,0.5,moderate,streaming_rule_v2
+full_50hz_pred_0004,full_50hz,99.44,100.54,Pothole/Bump,1.0,99.48,1.1,strong,streaming_rule_v2
+full_50hz_pred_0005,full_50hz,114.72,115.24,Pothole/Bump,0.891796,114.76,0.52,strong,streaming_rule_v2
+full_50hz_pred_0006,full_50hz,152.68,153.52,Pothole/Bump,1.0,152.88,0.84,strong,streaming_rule_v2
+full_50hz_pred_0007,full_50hz,174.12,174.68,Harsh Acceleration,1.0,174.26,0.56,strong,streaming_rule_v2
+full_50hz_pred_0008,full_50hz,175.98,177.46,Pothole/Bump,1.0,176.04,1.48,strong,streaming_rule_v2
+full_50hz_pred_0009,full_50hz,222.3,222.86,Harsh Braking,1.0,222.44,0.56,strong,streaming_rule_v2
+full_50hz_pred_0010,full_50hz,241.98,242.46,Harsh Braking,1.0,242.08,0.48,strong,streaming_rule_v2
+full_50hz_pred_0011,full_50hz,252.58,253.14,Harsh Acceleration,1.0,252.72,0.56,strong,streaming_rule_v2
+full_50hz_pred_0012,full_50hz,255.26,255.52,Pothole/Bump,1.0,255.3,0.26,strong,streaming_rule_v2
+full_50hz_pred_0013,full_50hz,299.38,299.7,Pothole/Bump,1.0,299.64,0.32,strong,streaming_rule_v2
+full_50hz_pred_0014,full_50hz,321.48,322.04,Clutch Release,0.930557,321.72,0.56,strong,streaming_rule_v2
+full_50hz_pred_0015,full_50hz,333.98,334.64,Harsh Acceleration,1.0,334.12,0.66,strong,streaming_rule_v2
+full_50hz_pred_0016,full_50hz,386.46,388.22,Harsh Braking,1.0,386.52,1.76,strong,streaming_rule_v2
+full_50hz_pred_0017,full_50hz,418.88,419.74,Pothole/Bump,1.0,419.12,0.86,strong,streaming_rule_v2
+full_50hz_pred_0018,full_50hz,422.08,422.76,Harsh Acceleration,1.0,422.2,0.68,strong,streaming_rule_v2
+full_50hz_pred_0019,full_50hz,430.54,431.12,Harsh Acceleration,1.0,430.68,0.58,strong,streaming_rule_v2
+full_50hz_pred_0020,full_50hz,443.32,444.08,Harsh Acceleration,1.0,443.5,0.76,strong,streaming_rule_v2
+full_50hz_pred_0021,full_50hz,470.14,470.54,Pothole/Bump,0.795529,470.46,0.4,moderate,streaming_rule_v2
+full_50hz_pred_0022,full_50hz,490.24,490.56,Harsh Acceleration,1.0,490.34,0.32,strong,streaming_rule_v2
+full_50hz_pred_0023,full_50hz,501.38,501.78,Pothole/Bump,0.84601,501.38,0.4,moderate,streaming_rule_v2
+full_50hz_pred_0024,full_50hz,559.36,559.96,Harsh Braking,1.0,559.5,0.6,strong,streaming_rule_v2
+full_50hz_pred_0025,full_50hz,588.34,588.74,Pothole/Bump,0.581794,588.36,0.4,weak,streaming_rule_v2
+full_50hz_pred_0026,full_50hz,593.82,594.34,Pothole/Bump,0.780758,593.88,0.52,moderate,streaming_rule_v2
+full_50hz_pred_0027,full_50hz,595.32,596.66,Pothole/Bump,1.0,595.36,1.34,strong,streaming_rule_v2
+full_50hz_pred_0028,full_50hz,633.26,633.68,Harsh Braking,1.0,633.4,0.42,strong,streaming_rule_v2
+full_50hz_pred_0029,full_50hz,640.34,641.06,Harsh Acceleration,1.0,640.48,0.72,strong,streaming_rule_v2
+full_50hz_pred_0030,full_50hz,663.78,664.04,Pothole/Bump,1.0,663.98,0.26,strong,streaming_rule_v2
+full_50hz_pred_0031,full_50hz,687.88,689.36,Pothole/Bump,0.813129,687.92,1.48,moderate,streaming_rule_v2
+full_50hz_pred_0032,full_50hz,700.88,701.74,Harsh Acceleration,1.0,701.02,0.86,strong,streaming_rule_v2
+full_50hz_pred_0033,full_50hz,720.7,721.22,Harsh Acceleration,1.0,720.84,0.52,strong,streaming_rule_v2
+full_50hz_pred_0034,full_50hz,733.62,734.24,Clutch Release,0.941576,733.82,0.62,strong,streaming_rule_v2
+full_50hz_pred_0035,full_50hz,748.94,749.44,Harsh Braking,1.0,749.04,0.5,strong,streaming_rule_v2
+full_50hz_pred_0036,full_50hz,765.9,766.58,Harsh Braking,1.0,766.04,0.68,strong,streaming_rule_v2
+full_50hz_pred_0037,full_50hz,793.44,793.82,Pothole/Bump,0.776402,793.48,0.38,moderate,streaming_rule_v2
+full_50hz_pred_0038,full_50hz,823.24,823.86,Harsh Braking,1.0,823.36,0.62,strong,streaming_rule_v2
+full_50hz_pred_0039,full_50hz,826.46,826.98,Harsh Acceleration,1.0,826.6,0.52,strong,streaming_rule_v2
+full_50hz_pred_0040,full_50hz,836.86,837.32,Harsh Acceleration,1.0,836.96,0.46,strong,streaming_rule_v2
+full_50hz_pred_0041,full_50hz,887.98,888.3,Harsh Braking,1.0,887.98,0.32,strong,streaming_rule_v2
+full_50hz_pred_0042,full_50hz,908.28,908.84,Harsh Acceleration,1.0,908.42,0.56,strong,streaming_rule_v2
+full_50hz_pred_0043,full_50hz,971.44,972.12,Harsh Braking,1.0,971.52,0.68,strong,streaming_rule_v2
+full_50hz_pred_0044,full_50hz,973.28,974.76,Pothole/Bump,0.774155,973.32,1.48,moderate,streaming_rule_v2
+full_50hz_pred_0045,full_50hz,990.88,991.42,Harsh Braking,1.0,990.92,0.54,strong,streaming_rule_v2
+full_50hz_pred_0046,full_50hz,1040.34,1041.06,Harsh Braking,1.0,1040.46,0.72,strong,streaming_rule_v2
+full_50hz_pred_0047,full_50hz,1052.56,1053.12,Harsh Acceleration,1.0,1052.72,0.56,strong,streaming_rule_v2
+full_50hz_pred_0048,full_50hz,1060.94,1061.42,Harsh Acceleration,1.0,1061.08,0.48,strong,streaming_rule_v2
+full_50hz_pred_0049,full_50hz,1063.06,1063.24,Harsh Acceleration,0.875,1063.08,0.18,strong,streaming_rule_v2
+full_50hz_pred_0050,full_50hz,1073.2,1075.2,Pothole/Bump,1.0,1073.24,2.0,strong,streaming_rule_v2
+full_50hz_pred_0051,full_50hz,1076.2,1076.5,Pothole/Bump,1.0,1076.24,0.3,strong,streaming_rule_v2
+full_50hz_pred_0052,full_50hz,1081.5,1081.8,Pothole/Bump,0.629652,1081.64,0.3,weak,streaming_rule_v2
+full_50hz_pred_0053,full_50hz,1100.68,1101.14,Harsh Acceleration,1.0,1100.7,0.46,strong,streaming_rule_v2
+full_50hz_pred_0054,full_50hz,1121.44,1121.96,Pothole/Bump,0.785907,1121.84,0.52,moderate,streaming_rule_v2
+full_50hz_pred_0055,full_50hz,1130.88,1131.74,Harsh Braking,1.0,1130.98,0.86,strong,streaming_rule_v2
+full_50hz_pred_0056,full_50hz,1133.98,1134.96,Pothole/Bump,1.0,1134.02,0.98,strong,streaming_rule_v2
+full_50hz_pred_0057,full_50hz,1135.42,1138.0,Harsh Acceleration,1.0,1135.52,2.58,strong,streaming_rule_v2
+full_50hz_pred_0058,full_50hz,1159.22,1159.78,Harsh Braking,1.0,1159.28,0.56,strong,streaming_rule_v2
+full_50hz_pred_0059,full_50hz,1162.98,1163.56,Harsh Braking,1.0,1163.06,0.58,strong,streaming_rule_v2
+full_50hz_pred_0060,full_50hz,1171.9,1172.18,Pothole/Bump,1.0,1172.12,0.28,strong,streaming_rule_v2
+full_50hz_pred_0061,full_50hz,1186.1,1186.58,Pothole/Bump,0.86931,1186.48,0.48,strong,streaming_rule_v2
+full_50hz_pred_0062,full_50hz,1243.04,1244.42,Harsh Braking,1.0,1243.1,1.38,strong,streaming_rule_v2
+full_50hz_pred_0063,full_50hz,1253.08,1253.72,Harsh Acceleration,1.0,1253.2,0.64,strong,streaming_rule_v2
+full_50hz_pred_0064,full_50hz,1354.34,1355.08,Clutch Release,1.0,1354.74,0.74,strong,streaming_rule_v2
+full_50hz_pred_0065,full_50hz,1356.1,1358.74,Harsh Acceleration,1.0,1356.18,2.64,strong,streaming_rule_v2
+full_50hz_pred_0066,full_50hz,1383.1,1383.38,Pothole/Bump,1.0,1383.3,0.28,strong,streaming_rule_v2
+full_50hz_pred_0067,full_50hz,1397.66,1398.04,Harsh Acceleration,1.0,1397.76,0.38,strong,streaming_rule_v2
+full_50hz_pred_0068,full_50hz,1445.98,1446.44,Pothole/Bump,0.794213,1446.42,0.46,moderate,streaming_rule_v2
+full_50hz_pred_0069,full_50hz,1452.28,1452.82,Clutch Release,0.863752,1452.56,0.54,strong,streaming_rule_v2
+full_50hz_pred_0070,full_50hz,1453.58,1453.88,Pothole/Bump,1.0,1453.8,0.3,strong,streaming_rule_v2
+full_50hz_pred_0071,full_50hz,1468.8,1469.24,Pothole/Bump,0.805036,1469.18,0.44,moderate,streaming_rule_v2
+full_50hz_pred_0072,full_50hz,1496.3,1497.0,Harsh Braking,1.0,1496.44,0.7,strong,streaming_rule_v2
+full_50hz_pred_0073,full_50hz,1497.62,1497.72,Pothole/Bump,0.749397,1497.62,0.1,moderate,streaming_rule_v2
+full_50hz_pred_0074,full_50hz,1504.94,1506.98,Pothole/Bump,1.0,1505.0,2.04,strong,streaming_rule_v2
+full_50hz_pred_0075,full_50hz,1507.74,1508.38,Harsh Acceleration,1.0,1507.9,0.64,strong,streaming_rule_v2
+full_50hz_pred_0076,full_50hz,1509.0,1509.38,Harsh Braking,1.0,1509.0,0.38,strong,streaming_rule_v2
+full_50hz_pred_0077,full_50hz,1520.56,1521.16,Harsh Braking,1.0,1520.7,0.6,strong,streaming_rule_v2
+full_50hz_pred_0078,full_50hz,1532.78,1533.62,Pothole/Bump,0.812855,1532.82,0.84,moderate,streaming_rule_v2
+full_50hz_pred_0079,full_50hz,1588.12,1588.44,Pothole/Bump,0.984522,1588.18,0.32,strong,streaming_rule_v2
+full_50hz_pred_0080,full_50hz,1602.58,1602.9,Pothole/Bump,1.0,1602.66,0.32,strong,streaming_rule_v2
+full_50hz_pred_0081,full_50hz,1638.4,1638.98,Harsh Acceleration,1.0,1638.54,0.58,strong,streaming_rule_v2
+full_50hz_pred_0082,full_50hz,1640.02,1640.76,Harsh Braking,1.0,1640.18,0.74,strong,streaming_rule_v2
+full_50hz_pred_0083,full_50hz,1650.54,1651.06,Harsh Braking,1.0,1650.6,0.52,strong,streaming_rule_v2
+full_50hz_pred_0084,full_50hz,1670.76,1670.96,Pothole/Bump,0.620436,1670.76,0.2,weak,streaming_rule_v2
+full_50hz_pred_0085,full_50hz,1696.38,1696.78,Harsh Braking,1.0,1696.48,0.4,strong,streaming_rule_v2
+full_50hz_pred_0086,full_50hz,1765.94,1767.48,Harsh Acceleration,1.0,1766.06,1.54,strong,streaming_rule_v2
+full_50hz_pred_0087,full_50hz,1776.5,1777.04,Harsh Braking,1.0,1776.58,0.54,strong,streaming_rule_v2
+full_50hz_pred_0088,full_50hz,1796.56,1797.26,Clutch Release,0.87342,1797.02,0.7,strong,streaming_rule_v2
+full_50hz_pred_0089,full_50hz,1799.24,1799.9,Pothole/Bump,0.997472,1799.28,0.66,strong,streaming_rule_v2
