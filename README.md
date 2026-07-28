@@ -2,7 +2,7 @@
 
 **Author: Dara Manohar**
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Daramanohar/Sensor-Based-Driving-Event-Detection/blob/main/ML_Intern_Assignment_Solution.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Daramanohar/Sensor-Based-Driving-Event-Detection/blob/main/solution.ipynb)
 
 An end-to-end machine-learning solution for detecting driving events from smartphone
 accelerometer, gyroscope, and GPS signals. The implementation combines a transparent
@@ -52,7 +52,7 @@ python run_pipeline.py
 python -m pytest
 ```
 
-Open `ML_Intern_Assignment_Solution.ipynb` for the complete analysis, plots, equations, and
+Open `solution.ipynb` for the complete analysis, plots, equations, and
 interpretation. The Colab badge opens it directly; the first notebook code cell clones or locates
 the project and installs the package and test dependencies.
 
@@ -93,7 +93,7 @@ to establish cross-driver or cross-device generalization.
 
 ```text
 .
-|-- ML_Intern_Assignment_Solution.ipynb  # executable analysis and answers
+|-- solution.ipynb                       # executable analysis and answers
 |-- README.md                            # project overview and instructions
 |-- SOLUTION.md                          # methodology and technical decisions
 |-- config.yaml                          # all data, rule, feature, and model settings
